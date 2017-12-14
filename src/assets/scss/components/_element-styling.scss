@@ -1,0 +1,10 @@
+.dbl-bd{
+		border: 3px solid $first_color;
+		h3{
+		    border: 3px solid $first_color;
+		    margin: 3px;
+		    padding: 5px;
+		    text-transform: uppercase;
+		    font-family: $base_font;
+		}
+	}

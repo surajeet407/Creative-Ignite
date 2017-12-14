@@ -1,0 +1,45 @@
+/**
+*
+* Fonts will be listed here
+*
+**/
+
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+
+/**
+*
+* Custom Variables will go here
+*
+**/
+$brand-color: #111;
+$first_color: #EC1A49;
+
+
+$base_font: "Yanone Kaffeesatz";
+$first_font: "Abel";
+
+
+/**
+*
+* Load all sass files here
+*
+**/
+
+@import "base-styling";
+@import "element-styling";
+@import "margins";
+@import "padding";
+@import "borders";
+@import "typo";
+@import "homepage";
+@import "about";
+@import "blog";
+@import "animate";
+@import "fakeloader";
+@import "imagehover";
+@import "texthover";
+@import "slickslider";
+@import "slider";
+

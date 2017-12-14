@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/00.png">
+    <title>Ignite Creative | Just Another Creation</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4qhE_75JbdODG7YjDSek3QUgkuPx533w&callback=initMap" async defer></script>
+  </head>
+  <body>
+  
+    {{> body}}
+
+    <script src="{{root}}assets/js/app.js"></script>
+    <script> 
+    $(function(){
+     
+      $(document).on( 'scroll', function(){
+     
+        if ($(window).scrollTop() > 100) {
+          $('.scroll-top-wrapper').addClass('show');
+        } else {
+          $('.scroll-top-wrapper').removeClass('show');
+        }
+      });
+    });
+     
+    $(function(){
+     
+      $(document).on( 'scroll', function(){
+     
+        if ($(window).scrollTop() > 100) {
+          $('.scroll-top-wrapper').addClass('show');
+        } else {
+          $('.scroll-top-wrapper').removeClass('show');
+        }
+      });
+     
+      $('.scroll-top-wrapper').on('click', scrollToTop);
+    });
+     
+    function scrollToTop() {
+      verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+      element = $('body');
+      offset = element.offset();
+      offsetTop = offset.top;
+      $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+    }
+  </script>
+  </body>
+</html>
+
+
+
